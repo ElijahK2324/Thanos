@@ -16,9 +16,11 @@ public class arraylists
 		ListofInts.add(2,678); // add to specific index of array
 		ListofInts.remove(0); // remove item at first index
 		ListofInts.get(0); // returns index 0
+		
 		for(int i = 0; i < ListofInts.size(); i ++)
 		{
 			System.out.println(ListofInts.get(i));
+			ListofInts.remove(0);
 		}
 	}
 
