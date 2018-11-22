@@ -115,24 +115,17 @@ public static void door1() {
 public static void basement1()
 {
 // public static voidines basement1 with nho arguments
-  System.out.println ("You enter the Basement")0
+  System.out.println("You enter the Basement");
   // System.out.printlns "You enter the Basement"
-  // sleep (3)
-  // // sleep s the program for 3 seconds
-  System.out.println ("False alarm, It was just a box")
+  System.out.println("False alarm, It was just a box");
   // System.out.printlns "False alarm, It was just a box"
-  // sleep (3)
-  // // sleep s the program for 3 seconds
-  System.out.println ("There is however clothes for you to take")
+  System.out.println("There is however clothes for you to take");
   // System.out.printlns There is however clothes for you to take
-  // sleep (3)
-  // // sleep s the program for 3 seconds
-  System.out.println ("Would you like to take these clothes?")
+  System.out.println("Would you like to take these clothes?");
   // System.out.printlns Would you like to take these clothes?
-  // sleep (3)
-  // // sleep s the program for 3 seconds
+  System.out.println("Say 1 to take clothes. Say 2 to leave them");
+  int choice = input.nextInt();
   
-  choice = int(input("Say 1 to take clothes. Say 2 to leave them"))
   // makes the choice variable and System.out.printlns "Say yes to take clothes. Say no to leave them"
   if choice == 1 and "Clothes" not in Backpack:
   // if the user choice equals to Yes and clothes are not in the variable Backpack continue  
@@ -200,144 +193,146 @@ public static void basement1()
     // calls the basement1() function to go there
 }
 
-public static void kitchen1():
-// public static voidines Kitchen1 with no arguments
-  System.out.println ("You return to the kitchen.")
-  //System.out.printlns You return to the kitchen
-  // sleep (2)
-  // // sleep s the program for 2 seconds
-  System.out.println ("You have to make a choice whether to leave the house and find people, or stay and make a hideout?")
-  //System.out.printlns "You have to make a choice whether to leave the house and find people, or stay and make a hideout?"
-  
-  choice = int(input("Enter 1 to leave, or Enter 2 to Stay"))
-  // creates the variable choice and System.out.printlns "Enter Leave to leave, or Enter Stay to Stay"
-  if choice == 1:
-  // if the user choice is equal to 'Leave' or 'leave' continue
-    System.out.println ("You leave the house to try and find people")
-    // System.out.printlns "You leave the house to try and find people"
-    // sleep (3)
-    //// sleep s the program for 3 seconds
-    System.out.println ("The moment you leave the house you see people")
-    // System.out.printlns "The moment you leave the house you see people"
-    // sleep (3)
-    // // sleep s the program for 3 seconds
-    System.out.println ("The people you have found are your family members.")
-    // System.out.printlns "The people you have found are your family members."
-    // sleep (3)
-    //// sleep s the program for 3 seconds
-    Endgame()
-    // calls the function Endgame() to continue to it
-  else if  choice == 2:
-  // else if the user choice = 'Stay' or 'stay' continue
-    System.out.println ("Ok, well if we're going to stay we might as well secure this place.")
-    //System.out.printlns "Ok, well if we're going to stay we might as well secure this place."
-    // sleep (3)
-    //// sleep s the program for 3 seconds
-    System.out.println ("There's a couple of things that you could take apart.")
-    // System.out.printlns "There's a couple of things that you could take apart."
-    // sleep (3)
-    //// sleep s the program for 3 seconds
-    System.out.println ("Would you like to take apart the chair's, the table's, or the cabinet's?")
-    // System.out.printlns "Would you like to take apart the chair's, the table's, or the cabinet's?"
-    // sleep (3)
-    // // sleep s the program for 3 seconds
-    System.out.println ("There are 3 chair's and each chair gives 4 wood")
-    // System.out.printlns "There are 3 chair's and each chair gives 4 wood"
-    // sleep (3)
-    //// sleep s the program for 3 seconds
-    System.out.println ("There is 1 table and it gives 10 wood")
-    // System.out.printlns "There is 1 table and it gives 10 wood"
-    // sleep (3)
-    // // sleep s the program for 3 seconds
-    System.out.println("There are 7 cabinets which give 3 wood each.")
-    // System.out.printlns "There are 7 cabinets which give 3 wood each."
-    // sleep (3)
-    //// sleep s the program for 3 seconds
-    System.out.println("You require 21 wood to complete the house, you only have enough energy to take apart 1 item.")
-    // System.out.printlns "You require 21 wood to complete the house, you only have enough energy to take apart 1 item."
-    // sleep (3)
-    // // sleep s the program for 3 seconds
-    choice = int(input("Enter 1 for chair's, 2 for table's, 3 for Cabinets"))
-    // creates the variable choice and System.out.printlns "Enter Ch for chair's, T for table's, C for Cabinets"
-    if choice == 1:
-    // if the user choice equals to 1 continue
-      System.out.println ("Calculating...")
-      // System.out.printlns "Calculating..."
-      // sleep (2)
-      //// sleep s the program for 2 seconds 
-      System.out.println ("...........")
-      // pritns ...........
-      // sleep (2)
-      // // sleep s the frogram for 2 seconds
-      System.out.println ("I think you might need to practice your math a bit.")
-      // System.out.printlns "I think you might need to practice your math a bit."
-      kitchen1()
-      // calls the function kitchen1() to go back to it
-    else if  choice == 2:
-    // else if the chocie is equal to 2 continue
-      System.out.println ("Calculating...")
-      // System.out.printlns "Calculating..."
-      // sleep (2)
-      // // sleep s the program for 2 seconds
-      System.out.println ("...........")
-      //System.out.printlns "..........."
-      // sleep (2)
-      System.out.println ("If only there was another table than you would be good.")
-      // System.out.printlns "If only there was another table than you would be good."
-      // sleep (3)
-      // // sleep s the program for 3 seconds
-      System.out.println ("But sadly I think your math is a bit off")
-      // System.out.printlns "But sadly I think your math is a bit off"
-      kitchen1()
-      // call the function kitchen1() to go back to it
-    else if  choice == 3:
-    // else if the choice is equal to 3 continue
-      System.out.println ("Calculating...")
-      //System.out.printlns "Calculating..."
-      // sleep (2)
-      // // sleep s the program for 2 seconds
-      System.out.println ("..........")
-      // System.out.printlns ".........."
-      // sleep (2)
-      // // sleep s the program for 2 seconds
-      System.out.println ("Well done sir! Your math is on point!")
-      // System.out.printlns "Well don sir! Your math is on point!"
-      // sleep (3)
-      //// sleep s the program for 3 seconds
-      System.out.println ("Wow, that was some hard work.")
-      // System.out.printlns "Wow, that was some hard work."
-      // sleep (3)
-      // // sleep s the program for 3 seconds
-      System.out.println ("I think you deserve some well rest, you'll continue tomorrow.")
-      // System.out.printlns "I think you deserve some well rest, you'll continue tomorrow."
-      // sleep  (4)
-      // // sleep s the program for 4 seconds
-      wakeup()
-      // calls the function wakeup() to go to it
-    else:
-    // if anything else is written than 1, 2 or 3 continue
-      System.out.println ("I don't think you know your numbers.")
-      // System.out.printlns "I don't think you know your numbers."
-      // sleep (3)
-      // // sleep s the program for 3 seconds
-      System.out.println ("Try again")
-      // System.out.printlns "Try again"
-      // sleep (2)
-      // // sleep s the program for 2 seconds
-      kitchen1()
-      // calls the function kitchen1() to go back to it
-  else:
-  // if anything else is typed other than 1 or 2 continue
-    System.out.println("I don't think you understood the question.")
-    // System.out.printlns "I dont think you understood the question."
-    // sleep (3)
-    // // sleep s the program for 3 seconds
-    System.out.println ("Try again")
-    // System.out.printlns "Try again"
-    // sleep (2)
-    //// sleep s the program for 2 seconds
-    kitchen1()
-    // calls the function kitchen1() to go back to it
+public static void kitchen1() 
+{
+	// public static voidines Kitchen1 with no arguments
+	  System.out.println ("You return to the kitchen.")
+	  //System.out.printlns You return to the kitchen
+	  System.out.println ("You have to make a choice whether to leave the house and find people, or stay and make a hideout?")
+	  //System.out.printlns "You have to make a choice whether to leave the house and find people, or stay and make a hideout?"
+	  System.out.println("Enter 1 to leave, or Enter 2 to Stay");
+	  int choice = input.nextLine();
+	  choice = int(input())
+	  // creates the variable choice and System.out.printlns "Enter Leave to leave, or Enter Stay to Stay"
+	  if choice == 1:
+	  // if the user choice is equal to 'Leave' or 'leave' continue
+	    System.out.println ("You leave the house to try and find people")
+	    // System.out.printlns "You leave the house to try and find people"
+	    // sleep (3)
+	    //// sleep s the program for 3 seconds
+	    System.out.println ("The moment you leave the house you see people")
+	    // System.out.printlns "The moment you leave the house you see people"
+	    // sleep (3)
+	    // // sleep s the program for 3 seconds
+	    System.out.println ("The people you have found are your family members.")
+	    // System.out.printlns "The people you have found are your family members."
+	    // sleep (3)
+	    //// sleep s the program for 3 seconds
+	    Endgame()
+	    // calls the function Endgame() to continue to it
+	  else if  choice == 2:
+	  // else if the user choice = 'Stay' or 'stay' continue
+	    System.out.println ("Ok, well if we're going to stay we might as well secure this place.")
+	    //System.out.printlns "Ok, well if we're going to stay we might as well secure this place."
+	    // sleep (3)
+	    //// sleep s the program for 3 seconds
+	    System.out.println ("There's a couple of things that you could take apart.")
+	    // System.out.printlns "There's a couple of things that you could take apart."
+	    // sleep (3)
+	    //// sleep s the program for 3 seconds
+	    System.out.println ("Would you like to take apart the chair's, the table's, or the cabinet's?")
+	    // System.out.printlns "Would you like to take apart the chair's, the table's, or the cabinet's?"
+	    // sleep (3)
+	    // // sleep s the program for 3 seconds
+	    System.out.println ("There are 3 chair's and each chair gives 4 wood")
+	    // System.out.printlns "There are 3 chair's and each chair gives 4 wood"
+	    // sleep (3)
+	    //// sleep s the program for 3 seconds
+	    System.out.println ("There is 1 table and it gives 10 wood")
+	    // System.out.printlns "There is 1 table and it gives 10 wood"
+	    // sleep (3)
+	    // // sleep s the program for 3 seconds
+	    System.out.println("There are 7 cabinets which give 3 wood each.")
+	    // System.out.printlns "There are 7 cabinets which give 3 wood each."
+	    // sleep (3)
+	    //// sleep s the program for 3 seconds
+	    System.out.println("You require 21 wood to complete the house, you only have enough energy to take apart 1 item.")
+	    // System.out.printlns "You require 21 wood to complete the house, you only have enough energy to take apart 1 item."
+	    // sleep (3)
+	    // // sleep s the program for 3 seconds
+	    choice = int(input("Enter 1 for chair's, 2 for table's, 3 for Cabinets"))
+	    // creates the variable choice and System.out.printlns "Enter Ch for chair's, T for table's, C for Cabinets"
+	    if choice == 1:
+	    // if the user choice equals to 1 continue
+	      System.out.println ("Calculating...")
+	      // System.out.printlns "Calculating..."
+	      // sleep (2)
+	      //// sleep s the program for 2 seconds 
+	      System.out.println ("...........")
+	      // pritns ...........
+	      // sleep (2)
+	      // // sleep s the frogram for 2 seconds
+	      System.out.println ("I think you might need to practice your math a bit.")
+	      // System.out.printlns "I think you might need to practice your math a bit."
+	      kitchen1()
+	      // calls the function kitchen1() to go back to it
+	    else if  choice == 2:
+	    // else if the chocie is equal to 2 continue
+	      System.out.println ("Calculating...")
+	      // System.out.printlns "Calculating..."
+	      // sleep (2)
+	      // // sleep s the program for 2 seconds
+	      System.out.println ("...........")
+	      //System.out.printlns "..........."
+	      // sleep (2)
+	      System.out.println ("If only there was another table than you would be good.")
+	      // System.out.printlns "If only there was another table than you would be good."
+	      // sleep (3)
+	      // // sleep s the program for 3 seconds
+	      System.out.println ("But sadly I think your math is a bit off")
+	      // System.out.printlns "But sadly I think your math is a bit off"
+	      kitchen1()
+	      // call the function kitchen1() to go back to it
+	    else if  choice == 3:
+	    // else if the choice is equal to 3 continue
+	      System.out.println ("Calculating...")
+	      //System.out.printlns "Calculating..."
+	      // sleep (2)
+	      // // sleep s the program for 2 seconds
+	      System.out.println ("..........")
+	      // System.out.printlns ".........."
+	      // sleep (2)
+	      // // sleep s the program for 2 seconds
+	      System.out.println ("Well done sir! Your math is on point!")
+	      // System.out.printlns "Well don sir! Your math is on point!"
+	      // sleep (3)
+	      //// sleep s the program for 3 seconds
+	      System.out.println ("Wow, that was some hard work.")
+	      // System.out.printlns "Wow, that was some hard work."
+	      // sleep (3)
+	      // // sleep s the program for 3 seconds
+	      System.out.println ("I think you deserve some well rest, you'll continue tomorrow.")
+	      // System.out.printlns "I think you deserve some well rest, you'll continue tomorrow."
+	      // sleep  (4)
+	      // // sleep s the program for 4 seconds
+	      wakeup()
+	      // calls the function wakeup() to go to it
+	    else:
+	    // if anything else is written than 1, 2 or 3 continue
+	      System.out.println ("I don't think you know your numbers.")
+	      // System.out.printlns "I don't think you know your numbers."
+	      // sleep (3)
+	      // // sleep s the program for 3 seconds
+	      System.out.println ("Try again")
+	      // System.out.printlns "Try again"
+	      // sleep (2)
+	      // // sleep s the program for 2 seconds
+	      kitchen1()
+	      // calls the function kitchen1() to go back to it
+	  else:
+	  // if anything else is typed other than 1 or 2 continue
+	    System.out.println("I don't think you understood the question.")
+	    // System.out.printlns "I dont think you understood the question."
+	    // sleep (3)
+	    // // sleep s the program for 3 seconds
+	    System.out.println ("Try again")
+	    // System.out.printlns "Try again"
+	    // sleep (2)
+	    //// sleep s the program for 2 seconds
+	    kitchen1()
+	    // calls the function kitchen1() to go back to it
+
+}
 
 public static void wakeup():
 // public static voidines the fuction wakeup()
