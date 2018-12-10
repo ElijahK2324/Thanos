@@ -967,6 +967,7 @@ public static void Endgame()
     // System.out.printlns "Ok that's Fine!"
     System.out.println ("Just press the Stop◻️ button at the top");
     // System.out.printlns "Just press the Stop◻️ button at the top"
+    System.exit(0); // end the game
   }
 
   else 
