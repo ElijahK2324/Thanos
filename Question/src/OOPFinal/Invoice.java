@@ -12,9 +12,9 @@ public class Invoice {
 		
 	}
 	
-	public void addToOrder(Product newproduct, int quantity)
+	public void addToOrder(Product newproduct, int price)
 	{
-		Lineitem theproduct = new Lineitem(newproduct, quantity);
+		Lineitem theproduct = new Lineitem(newproduct, price);
 		items.add(theproduct);
 	}
 	
@@ -26,15 +26,25 @@ public class Invoice {
 		}
 	}
 	
-	/**
+	
 	public double amountDue() 
 	{
 		int totalprice = 0;
 		for(int i = 0; i < items.size(); i ++ )
 		{
 			// check product and price for the product
+			totalprice += items.get(i);
+		}
+		return totalprice;
+	}
+	
+	public boolean canAfford(Customer theCustomer)
+	{
+		if(theCustomer.evilFunds )
+		{
 			
 		}
+			
 	}
 	
 	public boolean canAfford()
@@ -46,7 +56,6 @@ public class Invoice {
 			
 	}
 	
-	*/
 	///////////////
 	public static void main(String[] args) 
 	{
