@@ -35,6 +35,8 @@ public class gucci
 			}
 		} // end of method print songs
 		
+		
+		
 	// main method
 	public static void main(String[] args) 
 	{
@@ -115,7 +117,7 @@ public class gucci
 		
 		
 		// print space
-		System.out.println('\n');
+		System.out.print('\n');
 		
 		
 		while(flag)
@@ -158,8 +160,18 @@ public class gucci
 					break;
 				
 				case 3:
+					// add song to playlist
 					System.out.println("enter song # to add to party playlist:");
-					partyPlaylist.add(ListofSongs.get(input.nextInt()));
+					int number = input.nextInt();
+					if(number > ListofSongs.size())
+					{
+						System.out.println("error! invalid input. returning to menu...");
+					}
+					else 
+					{
+						System.out.println("song has been added to playlist");
+						partyPlaylist.add(ListofSongs.get(number));
+					}
 					break;
 					
 				case 4:
