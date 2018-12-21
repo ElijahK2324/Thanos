@@ -1,6 +1,20 @@
 package OOPFinal;
 
 public class TestInvoice {
+	
+	//do not modify code below
+		public static void runInvoice(Customer c, Invoice i) {
+			i.printInvoice();
+
+			if(c.getEvilFunds()- i.amountDue() < 0) {
+				System.out.println("Evil villian credit union to the rescue!!");	
+				c.addFunds(i.amountDue() - c.getEvilFunds());
+				System.out.println("New funds total: " + c.getEvilFunds());
+				i.printInvoice();
+			}
+					
+		}//end runInvoice
+		
 	public static void main(String[] args) {
 
 		// create 3 additional invoice runs
@@ -23,19 +37,5 @@ public class TestInvoice {
 		//invoice run 4
 		
 	}//end main
-	
-	//do not modify code below
-	public static void runInvoice(Customer c, Invoice i) {
-		i.printInvoice();
-
-		if(c.getEvilFunds()- i.amountDue() < 0) {
-			System.out.println("Evil villian credit union to the rescue!!");	
-			c.addFunds(i.amountDue() - c.getEvilFunds());
-			System.out.println("New funds total: " + c.getEvilFunds());
-			i.printInvoice();
-		}
-				
-	}//end runInvoice
 
 }//end TestInvoice
-

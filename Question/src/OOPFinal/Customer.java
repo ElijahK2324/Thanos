@@ -12,20 +12,32 @@ public class Customer {
 	{
 		this.secretLairLocation = secretLairLocation;
 		this.name = name;
-		this.evilFunds = evilFunds;
+		this.setEvilFunds(evilFunds);
 		
 	}
 	
-	public void addFunds(int funds) 
+	// add funds
+	public void addFunds(double funds) 
 	{
-		this.evilFunds += funds;
+		this.setEvilFunds(this.getEvilFunds() + funds);
 	}
 	
+	// to string
 	public String toString()
 	{
 		 return "secretLairLocation" + secretLairLocation +
 				"Name" + name +
-				"evilFunds" + evilFunds; // lair, name, evil funds;
+				"evilFunds" + getEvilFunds(); // lair, name, evil funds;
+	}
+
+	// create getter fir evil funds
+	public double getEvilFunds() {
+		return evilFunds;
+	}
+
+	// create setter for evil f
+	public void setEvilFunds(double evilFunds) {
+		this.evilFunds = evilFunds;
 	}
 
 }

@@ -12,55 +12,53 @@ public class Invoice {
 		
 	}
 	
-	public void addToOrder(Product newproduct, int price)
+	public void addToOrder(Product newproduct, int quantity)
 	{
-		Lineitem theproduct = new Lineitem(newproduct, price);
+		Lineitem theproduct = new Lineitem(newproduct, quantity);
 		items.add(theproduct);
 	}
-	
-	public void printInvoice()
-	{
-		for(int i = 0; i < items.size(); i ++)
-		{
-			System.out.println(items.get(i));
-		}
-	}
-	
-	
+
 	public double amountDue() 
 	{
 		int totalprice = 0;
 		for(int i = 0; i < items.size(); i ++ )
 		{
 			// check product and price for the product
-			totalprice += items.get(i);
+			totalprice += items.get(i).getQuantity() * items.get(i).getProduct().getPrice();
 		}
 		return totalprice;
 	}
 	
 	public boolean canAfford(Customer theCustomer)
 	{
-		if(theCustomer.evilFunds )
+		if(theCustomer.getEvilFunds() > amountDue())
 		{
-			
+			return true;
 		}
-			
+		else 
+		{
+			return false;
+		}
 	}
 	
-	public boolean canAfford()
-	{
-		if(theCustomer.evilFunds )
+	public void printInvoice() {
+		for(int i = 0; i < items.size(); i ++ )
 		{
-			
+			String name = items.get(i).getProduct().getname();
+			double price = items.get(i).getProduct().getPrice();
+			System.out.printf("name: %-15s price %-15s \n", name, price);
 		}
-			
+		
+		if(canAfford(theCustomer) == true)
+		{
+			System.out.println("you can afford this enjoy your new stuffz");
+		}
+		else
+		{
+			double remaining = amountDue() - theCustomer.getEvilFunds();
+			System.out.println("\nSorry you can't afford this you are $" + remaining + " short");
+		}
 	}
 	
-	///////////////
-	public static void main(String[] args) 
-	{
-		// TODO Auto-generated method stub
-
-	}
 
 }

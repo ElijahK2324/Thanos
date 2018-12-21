@@ -13,10 +13,27 @@ public class Product {
 	public String toString() {
 		return "Name" + name + "Price" + price;
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
+	
+	
+	// create getter for price and name
+	public double getPrice() {
+		return price;
 	}
+	
+	public String getname() {
+		return name;
+	}
+
+	// create setter for price and name
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	public void setname(String name ) {
+		this.name = name;
+	}
+	
+	
 
 }
