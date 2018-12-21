@@ -16,7 +16,7 @@ public class Lineitem {
 	}
 	
 	
-	// create some get ers
+	// create some getters
 	public Product getProduct() {
 		return theProduct;
 	}
@@ -26,7 +26,15 @@ public class Lineitem {
 		return quantity;
 	}
 	
+	
 	// create some setters
+	public void setQuantity(int quantity ) {
+		this.quantity = quantity;
+	}
+	
+	public void setProduct(Product theProduct ) {
+		this.theProduct = theProduct;
+	}
 	
 	
 	public static void main(String[] args) {

@@ -46,6 +46,7 @@ public class Invoice {
 		{
 			String name = items.get(i).getProduct().getname();
 			double price = items.get(i).getProduct().getPrice();
+			int quantity = items.get(i).getProduct().getQuantity();
 			System.out.printf("name: %-15s price %-15s \n", name, price);
 		}
 		
