@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 public class Invoice {
 	
-	private Customer theCustomer = new Customer(null, null, 0);
+	private Customer theCustomer;
 	private ArrayList<Lineitem> items = new ArrayList<Lineitem>();
 	
 	public Invoice(Customer theCustomer)
 	{
-		
+		this.theCustomer = theCustomer;
 	}
 	
 	public void addToOrder(Product newproduct, int quantity)
@@ -18,6 +18,7 @@ public class Invoice {
 		items.add(theproduct);
 	}
 
+	
 	public double amountDue() 
 	{
 		int totalprice = 0;
@@ -29,9 +30,10 @@ public class Invoice {
 		return totalprice;
 	}
 	
+	
 	public boolean canAfford(Customer theCustomer)
 	{
-		if(theCustomer.getEvilFunds() > amountDue())
+		if(theCustomer.getEvilFunds() >= amountDue())
 		{
 			return true;
 		}
@@ -41,18 +43,23 @@ public class Invoice {
 		}
 	}
 	
+	
 	public void printInvoice() {
+		System.out.println("\n ITEMS");
 		for(int i = 0; i < items.size(); i ++ )
 		{
-			String name = items.get(i).getProduct().getname();
-			double price = items.get(i).getProduct().getPrice();
-			int quantity = items.get(i).getProduct().getQuantity();
-			System.out.printf("name: %-15s price %-15s \n", name, price);
+			
+			// create varaibles and print them
+			String itemname = items.get(i).getProduct().getname();
+			double itemprice = items.get(i).getProduct().getPrice();
+			int itemquantity = items.get(i).getQuantity();
+			System.out.printf("name: %-15s price: $%-15s quantity %-15s\n", itemname, itemprice, itemquantity);
+			
 		}
 		
 		if(canAfford(theCustomer) == true)
 		{
-			System.out.println("you can afford this enjoy your new stuffz");
+			System.out.println("\nyou can afford this enjoy your new stuffz!");
 		}
 		else
 		{

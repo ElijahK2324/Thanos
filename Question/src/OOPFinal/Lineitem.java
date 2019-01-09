@@ -5,7 +5,7 @@ public class Lineitem {
 	private Product theProduct;
 	
 	
-	Lineitem(Product theProduct, int quanitity){
+	Lineitem(Product theProduct, int quantity){
 		this.theProduct = theProduct;
 		this.quantity = quantity;
 	}
@@ -40,6 +40,11 @@ public class Lineitem {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+	}
+
+	public Object getLineitem() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

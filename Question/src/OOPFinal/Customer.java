@@ -12,7 +12,7 @@ public class Customer {
 	{
 		this.secretLairLocation = secretLairLocation;
 		this.name = name;
-		this.setEvilFunds(evilFunds);
+		this.evilFunds = evilFunds;
 		
 	}
 	
